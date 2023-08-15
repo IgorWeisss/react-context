@@ -32,7 +32,6 @@ function reducer (state: typeof initialState, action: actionProps) {
 export const Context = createContext({} as ContextProps)
 
 export function ContextProvider({children}: {children: ReactNode}) {
-  console.log("Context")  
   const [state, dispatch] = useReducer(reducer, initialState)
   return (
     <Context.Provider value={{state, dispatch}}>

@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { Context } from "./context/Context";
 
 const TextInput = ({ value }: { value: "first" | "last" }) => {
-  console.log("TextInput")  
   const { state, dispatch } = useContext(Context)
   return (
     <div className="field">
@@ -21,7 +20,6 @@ const TextInput = ({ value }: { value: "first" | "last" }) => {
 };
 
 const Display = ({ value }: { value: "first" | "last" }) => {
-  console.log("Display")  
   const { state } = useContext(Context)
   return (
     <div className="value">
@@ -31,7 +29,6 @@ const Display = ({ value }: { value: "first" | "last" }) => {
 };
 
 const FormContainer = () => {
-  console.log("FormContainer")  
   return (
     <div className="container">
       <h5>FormContainer</h5>
@@ -42,7 +39,6 @@ const FormContainer = () => {
 };
 
 const DisplayContainer = () => {
-  console.log("DisplayContainer")  
   return (
     <div className="container">
       <h5>DisplayContainer</h5>
@@ -53,7 +49,6 @@ const DisplayContainer = () => {
 };
 
 const ContentContainer = () => {
-  console.log("ContentContainer")  
   return (
     <div className="container">
       <h5>ContentContainer</h5>
@@ -64,7 +59,6 @@ const ContentContainer = () => {
 };
 
 export function App() {
-  console.log("App")  
   return (
     <div className="container">
       <h5>App</h5>
